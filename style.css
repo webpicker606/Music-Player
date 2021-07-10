@@ -125,4 +125,10 @@ a:hover {
   .progress_container {
     width: 200px;
   }
+  .total_container {
+    width: 50vh;
+  }
+  .song_title {
+    margin-left: 0;
+  }
 }
