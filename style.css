@@ -121,12 +121,27 @@ a:hover {
 .shuffle_on {
   color: #39ff14;
 }
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 430px) {
   .progress_container {
-    width: 200px;
+    width: 30vw;
+  }
+  .progress {
+    margin: auto;
+  }
+  h3 {
+    margin-right: 2px;
+  }
+  .control_buttons {
+    margin-left: 0;
   }
   .total_container {
-    width: 50vh;
+    width: 80vw;
+  }
+  .current_time {
+    margin: 1px 0;
+  }
+  .duration {
+    margin: 1px 0;
   }
   .song_title {
     margin-left: 0;
