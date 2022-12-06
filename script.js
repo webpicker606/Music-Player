@@ -68,22 +68,18 @@ function next_song() {
     if (song_index > songs.length - 1) {
       song_index = 0;
     }
-    selected_song = load_song(songs[song_index]);
-    console.log("playing:", selected_song, ":", song_index);
-    play_button.classList.remove("fa-play");
-    play_button.classList.add("fa-pause");
-    selected_song.play();
+    
   } else if (is_Shuffle_on) {
     song_index = Math.floor(Math.random() * songs.length);
     if (song_index > songs.length - 1) {
       song_index = 0;
     }
-    selected_song = load_song(songs[song_index]);
+  }
+  selected_song = load_song(songs[song_index]);
     console.log("playing:", selected_song, ":", song_index);
     play_button.classList.remove("fa-play");
     play_button.classList.add("fa-pause");
     selected_song.play();
-  }
 }
 //function to move to previous song
 
